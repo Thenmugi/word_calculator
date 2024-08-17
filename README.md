@@ -1,0 +1,1 @@
+This project implements a simple word calculator using HTML, CSS, Tailwind and JavaScript. The word calculator counts the number of words in a given text input. It provides users with a quick analysis of their text.
