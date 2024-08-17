@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <title>words counter</title>
+
+</head>
+<body class=" h-screen flex justify-center items-center" style="background-color: #694F8E;">
+    <div class="main w-1/2 h-2/3  flex flex-col items-center rounded-xl " style="background: #B692C2;">
+        
+        <h1 class="font-black text-2xl mt-10 md:text-3xl" style="color:#FFDFD6">words counter</h1>
+        <textarea type="text" id="para" placeholder="Enter the para" class="bg-white-300 h-20 w-3/5 mt-10" ></textarea>
+        <button class="border p-3 w-2/5 rounded-xl mt-6" type="submit" onclick="counter()"  style="background-color: #FFDFD6;color:#694F8E">Count</button>
+        <div id="result" class="text-white font-medium text-xl">
+
+        </div>
+    </div>
+    <script>
+        
+        function counter(){
+            const para=document.getElementById("para").value
+            let words= para.split(" ")
+            const result =document.getElementById("result")
+            result.innerHTML = words.length
+        }
+    </script>
+</body>
+</html>
